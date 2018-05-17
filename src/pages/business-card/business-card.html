@@ -7,12 +7,107 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>business-card</ion-title>
+    <ion-title>Business Card</ion-title>
   </ion-navbar>
 
 </ion-header>
 
+<ion-content padding class="Settings">
+  
+  <ion-list >
 
-<ion-content padding>
+    <ion-card>
+      <ion-card-header>
+        Company / Brand Details
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label floating>Name : </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Tagline : </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        Personal Details
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label floating>First Name : </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Last Name : </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Title : </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        Address Details
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label floating>Address Line 1 : </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Address Line 2 : </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        Contact Details
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label floating>Contact No : </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Email : </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        Image / Logo
+      </ion-card-header>
+      <ion-card-content>
+        <img src="#">
+      </ion-card-content>
+    </ion-card>
+    
+  </ion-list>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button color="default" round outline block>
+          Preview
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button color="default" round outline block>
+          Clear
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

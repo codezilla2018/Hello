@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BusinessCardPage } from '../pages/business-card/business-card';
+import { SharingSettingsPage } from '../pages/sharing-settings/sharing-settings';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BusinessCardPage } from '../pages/business-card/business-card';
     ContactPage,
     HomePage,
     TabsPage,
-    BusinessCardPage
+    BusinessCardPage,
+    SharingSettingsPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { BusinessCardPage } from '../pages/business-card/business-card';
     ContactPage,
     HomePage,
     TabsPage,
-    BusinessCardPage
+    BusinessCardPage,
+    SharingSettingsPage
   ],
   providers: [
     StatusBar,
