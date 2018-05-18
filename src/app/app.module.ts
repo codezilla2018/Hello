@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Geolocation } from '@ionic-native/geolocation';
 import { BusinessCardPage } from '../pages/business-card/business-card';
 import { SharingSettingsPage } from '../pages/sharing-settings/sharing-settings';
+import { FirebaseProvider } from '../providers/firebase/firebase';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SharingSettingsPage } from '../pages/sharing-settings/sharing-settings'
     StatusBar,
     SplashScreen,
     Geolocation,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    FirebaseProvider
   ]
 })
 export class AppModule {}
