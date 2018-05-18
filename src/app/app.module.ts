@@ -10,6 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Geolocation } from '@ionic-native/geolocation';
 import { BusinessCardPage } from '../pages/business-card/business-card';
 import { SharingSettingsPage } from '../pages/sharing-settings/sharing-settings';
 
@@ -40,6 +41,7 @@ import { SharingSettingsPage } from '../pages/sharing-settings/sharing-settings'
   providers: [
     StatusBar,
     SplashScreen,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
