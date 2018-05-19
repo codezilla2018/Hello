@@ -11,8 +11,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 @Injectable()
 export class FirebaseProvider {
 
-  constructor(public http: HttpClient, public afd: AngularFireDatabase) {
-    console.log('Hello FirebaseProvider Provider');
+  constructor(public afd: AngularFireDatabase) {
   }
 
   getUsers() {
