@@ -16,4 +16,27 @@
 <ion-content padding>
   <p>Lat : {{ lat }}</p>
   <p>Lng : {{ lng }}</p>
+
+  <ion-row>
+    <ion-col col-9>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="newUser" placeholder="New User"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <button ion-button (click)="addUser()">Add!</button>
+    </ion-col>
+  </ion-row>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let user of users | async">
+      <ion-item>
+        {{ user.$value }}
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger" icon-only (click)="removeUser(user.$key)"><ion-icon name="trash"></ion-icon></button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
 </ion-content>
