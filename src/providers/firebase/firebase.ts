@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 /*
   Generated class for the FirebaseProvider provider.
@@ -10,8 +11,20 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class FirebaseProvider {
 
-  constructor(public http: HttpClient) {
+  constructor(public http: HttpClient, public afd: AngularFireDatabase) {
     console.log('Hello FirebaseProvider Provider');
+  }
+
+  getUsers() {
+    return this.afd.list('/users/');
+  }
+ 
+  addUser(name) {
+    this.afd.list('/users/').push(name);
+  }
+ 
+  removeUser(id) {
+    this.afd.list('/users/').remove(id);
   }
 
 }
