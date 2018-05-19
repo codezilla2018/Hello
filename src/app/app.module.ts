@@ -16,8 +16,8 @@ import { SharingSettingsPage } from '../pages/sharing-settings/sharing-settings'
 import { FirebaseProvider } from '../providers/firebase/firebase';
 
 import { HttpModule } from '@angular/http';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database-deprecated';
 
 const firebaseConfig = {
   apiKey: "AIzaSyB9s5qwytxNrY6CgSb2V9LXalVfe7r-sUk",

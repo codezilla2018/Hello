@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Geolocation, GeolocationOptions } from '@ionic-native/geolocation';
 import { FirebaseProvider } from './../../providers/firebase/firebase';
-import { FirebaseListObservable } from 'angularfire2/database';
+import { FirebaseListObservable } from 'angularfire2/database-deprecated';
 
 /**
  * Generated class for the SharingSettingsPage page.
