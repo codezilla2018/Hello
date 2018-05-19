@@ -15,6 +15,19 @@ import { BusinessCardPage } from '../pages/business-card/business-card';
 import { SharingSettingsPage } from '../pages/sharing-settings/sharing-settings';
 import { FirebaseProvider } from '../providers/firebase/firebase';
 
+import { HttpModule } from '@angular/http';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from 'angularfire2';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB9s5qwytxNrY6CgSb2V9LXalVfe7r-sUk",
+  authDomain: "hello-business-cards.firebaseapp.com",
+  databaseURL: "https://hello-business-cards.firebaseio.com",
+  projectId: "hello-business-cards",
+  storageBucket: "hello-business-cards.appspot.com",
+  messagingSenderId: "598218737887"
+};
+
 @NgModule({
   declarations: [
     MyApp,
@@ -27,6 +40,9 @@ import { FirebaseProvider } from '../providers/firebase/firebase';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(firebaseConfig),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
