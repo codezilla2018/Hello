@@ -29,9 +29,11 @@ export class SharingSettingsPage {
     this.users = this.firebaseProvider.getUsers();
   }
 
+  /*
   addUser() {
-    this.firebaseProvider.addUser(this.newUser);
+    this.firebaseProvider.addUserName(this.newUser);
   }
+  */
  
   removeUser(id) {
     this.firebaseProvider.removeUser(id);

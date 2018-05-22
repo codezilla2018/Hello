@@ -18,6 +18,7 @@ import { FirebaseListObservable } from 'angularfire2/database-deprecated';
 export class BusinessCardPage {
 
   cards: FirebaseListObservable<any[]>;
+  uname: string;
   company_name: string;
   company_tagline: string;
   first_name: string;
@@ -34,6 +35,7 @@ export class BusinessCardPage {
 
   addCardToDB(){
     this.firebaseProvider.addCard(
+      this.uname,
       this.company_name,
       this.company_tagline,
       this.first_name,
