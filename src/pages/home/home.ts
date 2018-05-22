@@ -66,7 +66,7 @@ export class HomePage {
         {
           text: 'Save',
           handler: (data) => {
-            this.firebaseProvider.checkUser(data.userName, data.password);
+            this.firebaseProvider.addUser(data.userName, data.password);
           }
         }
       ]

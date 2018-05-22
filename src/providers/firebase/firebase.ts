@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database-deprecated';
+import { BusinessCardPage } from '../../pages/business-card/business-card';
 
 @Injectable()
 export class FirebaseProvider {
@@ -16,16 +17,15 @@ export class FirebaseProvider {
 
   /* set user name and password for new user */
   addUser(uname, passwd) {
-    this.afd.object(`/Cards/${uname}`).set(
-      {
-        password: passwd
-      }
-    );
+    this.getCards().push({
+      user_name: uname,
+      password: passwd
+    });
   }
 
   /* set card details for the registered user */
-  addCard(uname,com_name, com_tagline, fname, lname, ttl, add_line1, add_line2, con_no, eml) {
-    this.afd.object(`/Cards/${uname}`).update({
+  addCard(user_key, com_name, com_tagline, fname, lname, ttl, add_line1, add_line2, con_no, eml) {
+    this.afd.object(`/Cards/${user_key}`).update({
       company_name: com_name,
       company_tagline: com_tagline,
       first_name: fname,
@@ -38,12 +38,9 @@ export class FirebaseProvider {
     });
   }
 
-  /* functions for user details */
-  getUsers() {
-    return this.afd.list('/users/');
-  }
-
+  
   /* return true, if name exist */
+  /*
   checkUser(uname, pawd) {
     let user = this.afd.object('/Cards/', { preserveSnapshot: true});
     user.subscribe(snapshot => {
@@ -54,6 +51,19 @@ export class FirebaseProvider {
         this.addUser(uname, pawd);
       }
     });
+  }
+  */
+
+  checkUser(uname, pswd) {
+    let reference = this.afd.database.ref('/Cards/');
+    reference.orderByChild("user_name").equalTo(uname).on("child_added",function(snapshot) {
+      let user = snapshot.val();
+      if(user.password == pswd) {
+        this.navCtrl.push(BusinessCardPage, {
+          usr_key: snapshot.key
+        });
+      }
+    })
   }
  
   removeUser(id) {
