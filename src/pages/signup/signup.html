@@ -1,0 +1,137 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>signup</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list >
+
+    <!-- card for company details -->
+    <ion-card>
+
+      <ion-card-header>
+        Company / Brand Details
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-item>
+          <ion-label floating>Name : </ion-label>
+          <ion-input type="text" [(ngModel)]="companyName" name="companyName" required="required"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Tagline : </ion-label>
+          <ion-input type="text" [(ngModel)]="companyTagline" name="companyTagline" required="required"></ion-input>
+        </ion-item>
+
+      </ion-card-content>
+
+    </ion-card>
+
+    <!-- card for personal details -->
+    <ion-card>
+
+      <ion-card-header>
+        Personal Details
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-item>
+          <ion-label floating>First Name : </ion-label>
+          <ion-input type="text" [(ngModel)]="firstName" name="firstName" required="required"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Last Name : </ion-label>
+          <ion-input type="text" [(ngModel)]="lastName" name="lastName" required="required"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Title : </ion-label>
+          <ion-input type="text" [(ngModel)]="title" name="title" required="required"></ion-input>
+        </ion-item>
+
+      </ion-card-content>
+
+    </ion-card>
+
+    <!-- card for address details -->
+    <ion-card>
+
+      <ion-card-header>
+        Address Details
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-item>
+          <ion-label floating>Address Line 1 : </ion-label>
+          <ion-input type="text" [(ngModel)]="addressLine1" name="addressLine1" required="required"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Address Line 2 : </ion-label>
+          <ion-input type="text" [(ngModel)]="addressLine2" name="addressLine2" required="required"></ion-input>
+        </ion-item>
+
+      </ion-card-content>
+
+    </ion-card>
+
+    <!-- card for contact details -->
+    <ion-card>
+
+      <ion-card-header>
+        Contact Details
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-item>
+          <ion-label floating>Contact No : </ion-label>
+          <ion-input type="tel" [(ngModel)]="contact" name="contact" required="required"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Email : </ion-label>
+          <ion-input type="email" [(ngModel)]="email" name="email" required="required"></ion-input>
+        </ion-item>
+      </ion-card-content>
+
+    </ion-card>
+
+    <!-- card for password -->
+    <ion-card>
+
+        <ion-card-header>
+          User Password
+        </ion-card-header>
+  
+        <ion-card-content>
+  
+          <ion-item>
+            <ion-label floating>Password : </ion-label>
+            <ion-input type="password" [(ngModel)]="password" name="password" required="required"></ion-input>
+          </ion-item>
+
+        </ion-card-content>
+  
+      </ion-card>    
+    
+  </ion-list>
+
+  <!-- For Submit button -->
+  <div padding text-center>
+    <button ion-button color="danger" round (click)="doSignup()">
+      Signup
+    </button>
+  </div>
+
+</ion-content>

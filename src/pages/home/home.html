@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello World</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+
+  <ion-card>
+
+    <ion-card-header>
+      Sharing Options
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-item>
+        <ion-label> Share Your Business Card </ion-label>
+        <ion-toggle [(ngModel)]="isShared" color="default"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label> Sharing Distance </ion-label>
+        <ion-select [(ngModel)]="distance">
+          <ion-option value=20> 20 m </ion-option>
+          <ion-option value=100> 100 m </ion-option>
+          <ion-option value=1000> 1 km </ion-option>
+          <ion-option value=10000> 10 km </ion-option>
+          <ion-option value=50000> 50 km </ion-option>
+        </ion-select>
+      </ion-item>
+
+    </ion-card-content>
+
+  </ion-card>
+
+  <p> 
+    latitude : {{lat}}
+    longtitude : {{lng}}
+  </p>
+
+  
+
+  <button ion-button secondary menuToggle>Toggle Menu</button>
+</ion-content>
