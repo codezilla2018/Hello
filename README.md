@@ -13,15 +13,17 @@ As well as this would be good to keep it as very similar to a buisness card but 
 ## Functionalities
 - [x] Firebase connecting as the back-end
 - [x] User authentication
-- [X] User signup
+- [x] User signup
 - [x] User details gathering
-- [ ] fvfv
-- [x] fsdf
-- [ ] fvfv
-- [x] fsdf
-- [ ] fvfv
+- [ ] Graphical business card designing
+- [x] GPS intergrating
+- [x] Location details storing in Firebase
+- [ ] Calculating distance between users
+- [ ] Showing the approriate users' business card
+- [ ] Business card storing as a Contact List
 
 ## For Developing
+
 
 ### Prerequisites
 
