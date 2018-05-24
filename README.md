@@ -26,7 +26,10 @@ As well as this would be good to keep it as very similar to a buisness card but 
 Ionic , Angular , Firebase have to be used for this project.
 
 ### Prerequisites
-
+* ionic 3
+* cordova 8 or above
+* node 8 or above
+* npm 5.6 or above
 
 ### Building the Environment
 * Clone or download the repository to the local machine
