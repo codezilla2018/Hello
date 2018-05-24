@@ -1,5 +1,5 @@
-# Hello
-### Mobile Application for sharing Virtual Business Cards
+# Hello 
+**Mobile Application for sharing Virtual Business Cards**
 
 ravindusachintha53@gmail.com Ravindu Sachintha RavinduSachintha IA7
 
