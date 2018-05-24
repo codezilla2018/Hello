@@ -1,7 +1,19 @@
 # Hello
-## Mobile Application for share Virtual Business Cards
+### Mobile Application for sharing Virtual Business Cards
 
 ravindusachintha53@gmail.com Ravindu Sachintha RavinduSachintha IA7
+
+## Introduction
+
+## Functionalities
+
+## For Developing
+
+### Prerequisites
+
+### Building the Environment
+
+## Licence
 
 This will be a simple shareable Buisness card for your mobile phone(mobile app).
 The application will be able to share the business card with near by users through the internet.
