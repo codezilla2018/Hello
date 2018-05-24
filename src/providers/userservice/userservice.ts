@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import * as firebase from 'firebase';
@@ -39,7 +38,7 @@ export class UserserviceProvider {
   }
 
   getNeighboursDetails() {
-    let currentuser = this.fireAuth.currentUser;
+    // let currentuser = this.fireAuth.currentUser;
     return console.log(this.userProfile.orderByChild("first_name").uid);
   }
 
