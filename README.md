@@ -29,6 +29,22 @@ Ionic , Angular , Firebase have to be used for this project.
 
 
 ### Building the Environment
+* Clone or download the repository to the local machine
+```shell
+$ git clone git@github.com:codezilla2018/Hello.git
+```
+* Go in to the "Hello" directory
+```shell
+$ cd ./Hello
+```
+* Install dependencies
+```shell
+$ npm install
+```
+* Run the application in localhost:8100
+```shell
+$ ionic serve
+```
 
 ## Licence
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
