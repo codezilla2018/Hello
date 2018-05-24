@@ -1,11 +1,18 @@
-# Hello 
-**Mobile Application for sharing Virtual Business Cards**
+# Hello - Mobile Application
+***Say "Hello" to Your World***
 
-ravindusachintha53@gmail.com Ravindu Sachintha RavinduSachintha IA7
+(ravindusachintha53@gmail.com Ravindu Sachintha RavinduSachintha IA7)
 
 ## Introduction
+This will be provided to you a simple **Shareable Business Card** through your mobile phone. It will share your business card with the nearby users through the internet in a specified range which can be provided by you.
+
+This will allows you to know about each others and share your profile with others. 
+As well as this would be good to keep it as very similar to a buisness card but in **a virtual space**.
+
 
 ## Functionalities
+- [x] fsdf
+- 
 
 ## For Developing
 
