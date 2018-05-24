@@ -23,17 +23,12 @@ As well as this would be good to keep it as very similar to a buisness card but 
 - [ ] Business card storing as a Contact List
 
 ## For Developing
-
+Ionic , Angular , Firebase have to be used for this project.
 
 ### Prerequisites
+
 
 ### Building the Environment
 
 ## Licence
-
-This will be a simple shareable Buisness card for your mobile phone(mobile app).
-The application will be able to share the business card with near by users through the internet.
-It will allows to know about each others, share your profile with others. 
-It would be good to keep it as very similar to a buisness card but in a virtual space.
-
-<b> Use Ionic framework for developing </b>
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
